@@ -52,7 +52,7 @@ nav a:hover {
     overflow: hidden;
     padding: 10px;
     transition: background-color 0.3s;
-    scroll-margin-top: 10px;
+    scroll-margin-top: 80px;
 }
 
 .cat img {
@@ -71,4 +71,33 @@ nav a:hover {
 
 h1 {
     text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+    .content {
+        margin-left: 0;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .cat img {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
 }
