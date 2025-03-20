@@ -1,11 +1,8 @@
 @font-face {
-
     font-family: 'SF Pro';
-  
     src: url(fonts/SF-Pro-Rounded-Thin.otf);
-  
-  }
-  
+}
+
 body {
     font-family: 'SF Pro', sans-serif;
     margin: 0;
@@ -42,7 +39,7 @@ nav a:hover {
     margin-left: 220px;
     padding: 20px;
     max-width: 800px;
-    text-align: center;
+    text-align: justify;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -52,16 +49,23 @@ nav a:hover {
 
 .cat {
     margin-bottom: 50px;
+    overflow: hidden;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 .cat img {
-    width: 100%;
-    max-width: 500px;
+    width: 40%;
+    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 10px auto;
+    float: right;
+    margin: 10px;
     border-radius: 10px;
-    float: none;
+}
+
+.cat:target {
+    background-color: lightblue;
+    border-radius: 10px;
 }
 
 h1 {
